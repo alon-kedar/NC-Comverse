@@ -340,10 +340,8 @@ li {
 #submit>input,
 #submit>button {
     border-style: hidden;
-    padding-left: 4px;
     height: 22px;
-    padding-top: 0;
-    padding-bottom: 0;
+	background-color: #fff;
 }
 
 #aside-sec {
@@ -414,11 +412,14 @@ ul {
     font-size: 0.9rem;
     margin-left: 10px;
 	padding-right: 10px;
-	border-right-style: solid;
-	border-right-width: 1px;
-	border-right-color: black;
 	/*color:black;*/
 	float: left;
+}
+
+.divider {
+	position: relative;
+	left: 10px;
+	top: 5px;
 }
 
 #top-sec ul>a:last-child {
@@ -449,6 +450,8 @@ ul {
 #submit input {
 	width:148px;
 	float: left;
+	margin-top: 2px;
+	margin-left: 4px;
 	/*margin-top: 27px;*/
 	/*border-radius: 5px;*/
 }
