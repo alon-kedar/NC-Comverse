@@ -177,12 +177,6 @@ h2 {
 	width: 160px;
 }
 
-#second-sec h2 {
-	padding-top: 40px;
-	padding-bottom: 40px;
-    text-align: center;
-}
-
 #second-sec .main-link {
     display: inline-block;
 	text-align: center;
@@ -226,13 +220,6 @@ h2 {
 	width: 300px;
 }
 
-#third-sec h2 {
-	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 40px;
-}
-
-
 #second-sec .padding {
     text-align: center;
 }
@@ -256,12 +243,20 @@ h2 {
 	padding: 20px 0;
 }
 
-#aside-sec footer>h3{
+#aside-sec footer {
+	font-size: 0.9rem;
+	line-height: 25px;
+	padding-top: 10px;
+}
+
+#aside-sec h3 {
 	color: blue;
 }
 
 #aside-sec footer+img {
 	position: absolute;
+	bottom: 15px;
+	right: 10px;;
 }
 
 /*#aside-sec ul {*/
@@ -274,6 +269,7 @@ h2 {
 	padding: 10px;
 	width: 400px;
 	background-color: white;
+	position: relative;
 }
 
 #aside-sec footer {
@@ -283,11 +279,13 @@ h2 {
 .story img {
 	display: inline-block;
 	float: left;
-	position: absolute;
+	padding: 10px;
+	/*position: absolute;*/
 }
 
 .story {
-	height: 100px;
+	height: 130px;
+	border-bottom: solid #222222 1px;
 }
 
 
@@ -305,6 +303,8 @@ li {
 
 .sec-title {
 	font-size: 2rem;
+	padding: 40px 0;
+	text-align: center;
 }
 
 #first-sec h1 {
