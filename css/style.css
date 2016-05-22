@@ -266,12 +266,39 @@ h2 {
 	/*margin: auto;*/
 /*}*/
 
+.logos {
+	font-size: 0px;
+}
+
+.logos>img {
+	margin: 12px 12px 12px 0;
+}
+
+.logos>img:last-child {
+	margin-right: 0;
+}
+
 #aside-sec article {
 	display: inline-block;
 	padding: 10px;
-	width: 400px;
+	width: 348px;
 	background-color: white;
 	position: relative;
+}
+
+#aside-sec>.padding>div {
+	display: inline-block;
+	float: left;
+	margin-left: 12px;
+	/*vertical-align: top;*/
+}
+
+#aside-sec>.padding>div:last-child {
+	margin-left: 0;
+}
+
+#aside-sec #rs {
+	width: 228px;
 }
 
 #aside-sec footer {
@@ -357,6 +384,7 @@ li {
 #aside-sec {
 	background: #e3e3e3;
 	color:grey;
+	font-size: 0;
 }
 
 #third-sec dd {
