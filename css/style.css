@@ -247,13 +247,15 @@ h2 {
 	font-size: 0.9rem;
 	line-height: 25px;
 	padding-top: 10px;
+	clear: both;
+	float: left;
 }
 
 #aside-sec h3 {
 	color: blue;
 }
 
-#aside-sec footer+img {
+#aside-sec footer>img {
 	position: absolute;
 	bottom: 15px;
 	right: 10px;;
@@ -451,8 +453,10 @@ ul {
 	/*vertical-align: bottom;*/
 }
 
-#top-sec label {
-	margin-left: 2px;
+#top-right label {
+	display: inline-block;
+	position: relative;
+	left: 5px;
 }
 
 #submit input {
