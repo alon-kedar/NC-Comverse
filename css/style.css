@@ -250,7 +250,7 @@ h2 {
 }
 
 #aside-sec footer {
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	line-height: 25px;
 	padding-top: 10px;
 	clear: both;
@@ -277,7 +277,7 @@ h2 {
 }
 
 .logos>img {
-	margin: 12px 12px 12px 0;
+	margin: 13.7px 13.7px 13.7px 0;
 }
 
 .logos>img:last-child {
@@ -287,7 +287,7 @@ h2 {
 #aside-sec article {
 	display: inline-block;
 	padding: 10px;
-	width: 348px;
+	width: 351.4px;
 	background-color: white;
 	position: relative;
 }
@@ -295,16 +295,16 @@ h2 {
 #aside-sec>.padding>div {
 	display: inline-block;
 	float: left;
-	margin-left: 12px;
+	margin-right: 13.7px;
 	/*vertical-align: top;*/
 }
 
-#aside-sec>.padding>div:last-child {
-	margin-left: 0;
+#aside-sec #lad {
+	margin-right: 0;
 }
 
-#aside-sec #rs {
-	width: 228px;
+#lad>article {
+	width: 229.7px;
 }
 
 #aside-sec footer {
