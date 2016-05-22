@@ -209,6 +209,7 @@ h2 {
 	padding: 10px;
 	color: black;
 	font-size: 0.8rem;
+	/*ask alex how to avoid spacing between inline elements*/
 }
 
 #third-sec p:hover {
@@ -221,6 +222,7 @@ h2 {
 
 #third-sec li {
 	display: inline-block;
+	/*float: left;*/
 	width: 300px;
 }
 
@@ -326,6 +328,7 @@ li {
 }
 
 #submit {
+	height: 25px;
     margin-top: 35px;
 	margin-bottom: 3px;
 	display: inline-block;
@@ -340,8 +343,13 @@ li {
 #submit>input,
 #submit>button {
     border-style: hidden;
-    height: 22px;
+    height: 23px;
 	background-color: #fff;
+}
+
+#submit>button {
+	position: relative;
+	top: -2px;
 }
 
 #aside-sec {
@@ -450,7 +458,7 @@ ul {
 #submit input {
 	width:148px;
 	float: left;
-	margin-top: 2px;
+	/*margin-top: 2px;*/
 	margin-left: 4px;
 	/*margin-top: 27px;*/
 	/*border-radius: 5px;*/
