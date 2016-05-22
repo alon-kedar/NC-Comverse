@@ -80,7 +80,7 @@ a:hover {
 
 #first-sec li {
 	position: relative;
-	width:290px;
+	width:300px;
 	height: 160px;
 	margin: 10px 30px 10px 0;
 	/*float: left;*/
@@ -99,10 +99,10 @@ a:hover {
 	font-size: 1rem;
 	border-radius: 5px;
 	padding: 10px 10px 8px 10px;
-	display: block;
+	display: inline-block;
 	width: 180px;
 	height:20px;
-	position: absolute;
+	/*position: absolute;*/
 	text-align: left;
 }
 
@@ -117,6 +117,7 @@ a:hover {
 	color: white;
 	height: auto;
 	width: 220px;
+	position: relative;
 }
 
 .marked-date {
@@ -168,8 +169,11 @@ h2 {
 	/*margin: auto;*/
 }
 
-#second-sec .main-link {
+#second-sec .main-link,
+#aside-sec .main-link {
 	margin-bottom: 40px;
+	/*text-align: center;*/
+	margin-top: 50px;
 }
 
 .main-nav>a {
@@ -177,26 +181,24 @@ h2 {
 	width: 160px;
 }
 
-#second-sec .main-link {
-    display: inline-block;
-	text-align: center;
-	margin-top: 50px;
-}
-
 
 #third-sec {
 	background-image: url(../img/backgrounds/news-and-events-bg.jpg);
 	height: 350px;
+	font-size: 0;
 }
 
 #third-sec a {
+	font-size: 1rem;
 	position: absolute;
 	margin-top: 110px;
 }
 
+
+
 #third-sec p {
 	display: inline-block;
-	width: 270px;
+	width: 300px;
 	height: 100px;
 	background-color: rgba(255,255,255,0.4);
 	position: absolute;
@@ -218,6 +220,10 @@ h2 {
 	display: inline-block;
 	/*float: left;*/
 	width: 300px;
+}
+
+#third-sec dd+li {
+	margin-right: 30px;
 }
 
 #second-sec .padding {
@@ -322,14 +328,6 @@ li {
 	list-style: none;
 }
 
-#first-sec h1,
-#first-sec p,
-#first-sec ul,
-.main-link {
-	position: relative;
-	/*left: 100px;*/
-}
-
 .sec-title {
 	font-size: 2rem;
 	padding: 40px 0;
@@ -354,6 +352,7 @@ li {
 	list-style: none;
 	overflow: hidden;
 	margin-top: 60px;
+	font-size: 0;
 }
 
 #submit {
