@@ -11,6 +11,55 @@ body {
 	/*margin-top: 0;*/
 /*}*/
 
+
+.horizontel > li {
+	border: solid silver 2px;
+	border-right: none;
+}
+
+.horizontel > li:last-child {
+	border-right: solid silver 2px;
+}
+
+.vertical {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	display: none;
+}
+
+.vertical a {
+	display: block;
+	width: 100%;
+	background-color: white;
+}
+
+.horizontel>li:hover>.vertical {
+	display: block;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+.vertical>li {
+	border: solid silver 2px;
+	border-bottom: none;
+	/*display: block;*/
+	width: 100%;
+	/*position: absolute;*/
+}
+.vertical>li:last-child {
+	border-bottom: solid silver 2px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -85,10 +134,11 @@ a:hover {
 	margin: 10px 30px 10px 0;
 	/*float: left;*/
     display: inline-block;
+	float: left;
 	padding: 10px 15px 0 20px;
 
 	border-radius: 10px;
-	vertical-align: top;
+	/*vertical-align: text-top;*/
 }
 
 #first-sec li:last-child {
@@ -352,7 +402,7 @@ li {
 	list-style: none;
 	overflow: hidden;
 	margin-top: 60px;
-	font-size: 0;
+	/*font-size: 0;*/
 }
 
 #submit {
@@ -397,6 +447,7 @@ li {
 
 #top-sec {
 	background: #fff;
+	overflow: visible;
 }
 
 #top-sec>div>div{
@@ -438,36 +489,33 @@ ul {
 	border-style: none;
 }
 
-#top-sec ul {
+.horizontel {
     padding: 62px 20px 0px 15px;
-    /*display: inline-block;*/
     float: left;
 	/*vertical-align: bottom;*/
 }
 
-#top-sec li {
+.horizontel>li {
     font-size: 0.9rem;
-    margin-left: 10px;
-	padding-right: 10px;
-	/*color:black;*/
+	padding: 0 10px;
+}
+
+.horizontel>li {
 	float: left;
 }
 
-.divider {
-	position: relative;
-	left: 10px;
-	top: 5px;
-}
+/*.divider {*/
+	/*position: relative;*/
+	/*left: 10px;*/
+	/*top: 5px;*/
+/*}*/
 
-#top-sec ul>a:last-child {
-	border-right-width: 0px;
-	padding-right: 0px;
-}
+/*#top-sec ul>a:last-child {*/
+	/*!*border-right: 0px;*!*/
+	/*!*padding-right: 0px;*!*/
+/*}*/
 
-#top-sec ul>a:first-child {
-    font-size: 0.8rem;
-    margin-left: 0;
-}
+
 
 #top-sec form {
 	float:left;
@@ -478,6 +526,11 @@ ul {
     float: left;
 	padding-top: 20px;
 	/*vertical-align: bottom;*/
+}
+
+#top-sec .padding {
+	position: relative;
+	padding: 0;
 }
 
 #top-right label {
