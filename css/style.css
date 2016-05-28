@@ -22,23 +22,48 @@ body {
 }
 
 .vertical {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    padding-left: 20px;
+
+}
+
+.submenu {
     position: absolute;
     left: 0;
     width: 100%;
     display: none;
+    background-color: #fff;
+    /*margin-top: 10px;*/
+}
+
+.submenu img {
+    float: right;
+    padding: 30px 40px;
 }
 
 .vertical a {
     display: block;
-    background-color: white;
 }
+
+.vertical dd {
+    color: #65B1D7;
+    text-decoration: underline;
+}
+
+.vertical a:hover {
+    background-color: lightblue;
+}
+
+
 
 #top-sec a {
     width: 100%;
     height: 100%;
 }
 
-.horizontel > li:hover > .vertical {
+.horizontel > li:hover > .submenu {
     display: block;
 }
 
@@ -89,6 +114,12 @@ html {
     overflow: hidden;
     width: 100%;
 }
+
+.article {
+    display: block;
+}
+
+
 
 i:hover,
 a:hover {
@@ -350,12 +381,26 @@ h2 {
     margin-right: 0;
 }
 
-#aside-sec article {
+#aside-sec article,
+#aside-sec .article{
     display: inline-block;
     padding: 10px;
     width: 351.4px;
     background-color: white;
     position: relative;
+}
+
+#aside-sec .none-hovered {
+     position: absolute;
+     top: 0;
+     right: 0;
+     background-color: blue;
+     color: white;
+     /*display: block;*/
+ }
+
+#aside-sec .hovered:hover {
+    display: none;
 }
 
 #mid > img {
@@ -366,6 +411,7 @@ h2 {
     display: inline-block;
     float: left;
     margin-right: 13.7px;
+    position: relative;
     /*vertical-align: top;*/
 }
 
@@ -373,9 +419,13 @@ h2 {
     margin-right: 0;
 }
 
-#lad > article {
+#lad .article {
     width: 229.7px;
 }
+
+/*#lad>div:first-child {*/
+    /*position: relative;*/
+/*}*/
 
 #aside-sec footer {
     display: inline-block;
@@ -458,6 +508,7 @@ li {
     background: #e3e3e3;
     color: grey;
     font-size: 0;
+    height: 560px;
 }
 
 #third-sec dd {
@@ -527,6 +578,8 @@ ul {
     padding: 0 10px;
 }
 
+
+
 .horizontel > li {
     float: left;
 }
@@ -595,10 +648,10 @@ ul {
 }
 
 #biz-sol {
-    background-image: url("../img/solutions/solution_icon_biz-analitics.png");
+    background-image: url("../img/solutions/solution_icon_biz-transform.png");
 }
 #biz-sol:hover {
-    background-image: url("../img/solutions/solution_icon_biz-analitics_hover.png");
+    background-image: url("../img/solutions/solution_icon_biz-transform_hover.png");
 }
 
 #top-sec .padding {
