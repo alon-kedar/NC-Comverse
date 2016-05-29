@@ -12,14 +12,6 @@ body {
 /*margin-top: 0;*/
 /*}*/
 
-.horizontel > li {
-    border: solid silver 2px;
-    border-right: none;
-}
-
-.horizontel > li:last-child {
-    border-right: solid silver 2px;
-}
 
 .vertical {
     display: inline-block;
@@ -35,7 +27,23 @@ body {
     width: 100%;
     display: none;
     background-color: #fff;
-    /*margin-top: 10px;*/
+    z-index: 100;
+}
+
+/*.submenu img::before {*/
+    /*content: url("../img/icons/divider.png");*/
+    /*width: 10px;*/
+    /*height: 50px;*/
+/*}*/
+
+.horizontel > li::after {
+    content: url("../img/icons/divider.png");
+    position: relative;
+    left: 10px;
+}
+
+.vertical img::before {
+    content: url("../img/icons/divider.png");
 }
 
 .submenu img {
@@ -78,16 +86,16 @@ body {
 }
 
 .vertical > li {
-    border: solid silver 2px;
-    border-bottom: none;
+    /*border: solid silver 2px;*/
+    /*border-bottom: none;*/
     /*display: block;*/
     width: 100%;
     /*position: absolute;*/
 }
 
-.vertical > li:last-child {
-    border-bottom: solid silver 2px;
-}
+/*.vertical > li:last-child {*/
+    /*border-bottom: solid silver 2px;*/
+/*}*/
 
 a {
     text-decoration: none;
@@ -526,11 +534,13 @@ li {
 #top-sec {
     background: #fff;
     overflow: visible;
+    /*height: 90px;*/
+    /*z-index: 10;*/
 }
 
 #top-sec > div > div {
     /*width:1000px;*/
-    height: 80px;
+    /*height: 80px;*/
     /*margin: auto;*/
     padding: 10px;
 }
@@ -570,30 +580,17 @@ ul {
 .horizontel {
     padding: 62px 20px 0px 15px;
     float: left;
+
     /*vertical-align: bottom;*/
 }
 
 .horizontel > li {
     font-size: 0.9rem;
     padding: 0 10px;
-}
-
-
-
-.horizontel > li {
     float: left;
+    line-height: 2rem;
 }
 
-/*.divider {*/
-/*position: relative;*/
-/*left: 10px;*/
-/*top: 5px;*/
-/*}*/
-
-/*#top-sec ul>a:last-child {*/
-/*!*border-right: 0px;*!*/
-/*!*padding-right: 0px;*!*/
-/*}*/
 
 #top-sec form {
     float: left;
