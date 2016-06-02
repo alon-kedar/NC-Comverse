@@ -24,7 +24,7 @@ body {
 .submenu {
     position: absolute;
     left: 0;
-    top: 94px;
+    top: 95px;
     width: 100%;
     display: none;
     background-color: #fff;
@@ -64,13 +64,6 @@ body {
 
 .vertical a:hover {
     background-color: lightblue;
-}
-
-
-
-#top-sec a {
-    width: 100%;
-    height: 100%;
 }
 
 .horizontel > li:hover > .submenu {
@@ -312,9 +305,25 @@ h2 {
     display: inline-block;
 }
 
+.hovered p,
 .story p {
-    font-size: 1rem;
-    /*float: none;*/
+    padding: 0 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.hovered p {
+    display: block;
+    padding-top: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.hovered img {
+    float: left;
+    overflow: auto;
+    padding: 10px;
 }
 
 #third-sec li {
@@ -604,7 +613,6 @@ ul {
 .horizontel {
     padding: 62px 20px 0px 15px;
     float: left;
-
     /*vertical-align: bottom;*/
 }
 
@@ -618,15 +626,17 @@ ul {
 
 .horizontel >li > a {
     z-index: 200;
+    position: relative;
     display: inline-block;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: inherit;*/
+    background-color: #fff;
 }
 
-.horizontel > li > a:hover {
-    border: solid transparent 2px;
-    border-bottom-color: white;
-    z-index: 200;
+.horizontel > li:hover {
+    border: solid gray 2px;
+    border-bottom-color: #fff;
+    /*z-index: 200;*/
 }
 
 .horizontel > li li {
