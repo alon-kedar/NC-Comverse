@@ -44,13 +44,11 @@ body {
     /*left: 10px;*/
 /*}*/
 
-.vertical img::before {
-    content: url("../img/icons/divider.png");
-}
-
 .submenu img {
     float: right;
-    padding: 30px 40px;
+    padding: 0 40px;
+    margin: 30px 0;
+    border-left: solid #ccc 2px;
 }
 
 .vertical a {
@@ -318,6 +316,7 @@ h2 {
     padding-top: 10px;
     width: 80%;
     margin: auto;
+    /*float: left;*/
 }
 
 .hovered img {
@@ -618,13 +617,18 @@ ul {
 
 .horizontel > li {
     font-size: 0.9rem;
-    padding: 0 10px;
+    /*padding: 0 10px;*/
     float: left;
     line-height: 2rem;
+    border: solid transparent 1px;
     /*z-index: 20;*/
 }
 
-.horizontel >li > a {
+.horizontel > li > a {
+    padding: 0 10px;
+}
+
+.horizontel > li:hover > a {
     z-index: 200;
     position: relative;
     display: inline-block;
