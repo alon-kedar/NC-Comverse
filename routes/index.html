@@ -3,6 +3,7 @@
 <head>
     <title>comverse</title>
     <meta charset="UTF-8">
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800'
           rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
@@ -13,8 +14,13 @@
 <section id="top-sec" class="bg">
     <div>
         <div class="padding">
-            <img src="../img/logo/comverse-logo.png" alt="comverse logo">
-            <ul class="horizontel clearfix">
+            <a href="http://www.comverse.com" class="logo">
+                <img src="../img/logo/comverse-logo.png" alt="comverse logo">
+            </a>
+
+            <input id="menu" type="checkbox" class="menu_cb hidden">
+            <label for="menu" class="menu_btn hidden"><i class="fa fa-bars fa-2x"></i></label>
+            <ul id="top_menu_bar" class="horizontel clearfix">
                 <li>
                     <a href="">YOUR NEEDS</a>
                     <div class="submenu">
@@ -110,6 +116,8 @@
                     </div>
                 </li>
             </ul>
+            <input id="submit_search" type="checkbox" class="hidden">
+            <label for="submit_search" class="search_btn hidden"><i class="fa fa-search" aria-hidden="true"></i></label>
             <div class="right">
                 <form method="post" id="top-right">
                     <select>
@@ -232,7 +240,8 @@
                                 <p>
                                     BTC, a full-service provider on the bahamas
                                     depends
-                                    on comverse solutions for real time BSS, voice services, SMS, data management and monetization.
+                                    on comverse solutions for real time BSS, voice services, SMS, data management and
+                                    monetization.
                                 </p>
                                 <img src="../img/icons/quote-grey.png">
                             </section>
@@ -299,7 +308,7 @@
                         <section>
                             <img src="../img/icons/quote-grey.png">
                             <p>
-                                 Comverse has demonstrated that they are partners
+                                Comverse has demonstrated that they are partners
                                 not
                                 just suppliers...
                             </p>

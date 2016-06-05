@@ -669,11 +669,47 @@ ul {
     width: 200px;
 }
 
-#top-sec .padding > img {
+#top-sec .padding > a >img {
     /*display: inline-block;*/
     float: left;
     padding-top: 20px;
     /*vertical-align: bottom;*/
+}
+
+.menu_btn {
+    position: absolute;
+    top: 30px;
+    left: 29px;
+    /*transform: scale(2,2);*/
+}
+
+input[type=checkbox].menu_cb {
+    position: absolute;
+    top: 40px;
+    left: 38px;
+    transform: scale(3.3,3.3);
+}
+
+input[type=checkbox].menu_cb:checked ~ #top_menu_bar > li {
+    display: block;
+}
+
+#top-sec .hidden {
+    display: none;
+}
+
+.search_btn {
+    position: absolute;
+    top: 32px;
+    right: 39px;
+    transform: scale(1.8,1.8);
+}
+
+input[type=checkbox]#submit_search {
+    position: absolute;
+    top: 40px;
+    right: 38px;
+    transform: scale(3.3,3.3);
 }
 
 .sol-img {
@@ -811,5 +847,29 @@ ul {
     font-size: 2rem;
     line-height: 30px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 970px) {
+    /*#top_menu_bar {*/
+        /*display: none;*/
+    /*}*/
+
+    #top-sec .hidden {
+        display: block;
+    }
+
+    #top-sec .padding > a >img {
+        position: absolute;
+        left: calc(50% - 92.5px)
+    }
+
+    /*#top_menu_bar {*/
+        /*display: none;*/
+    /*}*/
+
+    #top_menu_bar > li {
+        display: none;
+        float: none;
+    }
 }
 
