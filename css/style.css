@@ -536,7 +536,7 @@ li {
 
 #submit {
     height: 25px;
-    margin-top: 35px;
+    margin-top: 25px;
     margin-bottom: 3px;
     display: inline-block;
     /*width: 160px;*/
@@ -573,16 +573,16 @@ li {
 
 #first-sec li > a {
     position: absolute;
-    bottom: 0px;
+    top: 120px;
     left: 0;
-    padding-top: 130px;
+    /*padding-top: 130px;*/
     padding-left: 20px;
 }
 
 #top-sec {
     background: #fff;
     overflow: visible;
-    /*height: 90px;*/
+    height: 100px;
     /*z-index: 10;*/
 }
 
@@ -625,8 +625,8 @@ ul {
     border-style: none;
 }
 
-.horizontel {
-    padding: 62px 20px 0px 15px;
+#top_menu_bar {
+    padding: 52px 20px 0px 15px;
     float: left;
     /*vertical-align: bottom;*/
 }
@@ -672,7 +672,7 @@ ul {
 #top-sec .padding > a >img {
     /*display: inline-block;*/
     float: left;
-    padding-top: 20px;
+    padding-top: 10px;
     /*vertical-align: bottom;*/
 }
 
@@ -687,7 +687,7 @@ input[type=checkbox].menu_cb {
     position: absolute;
     top: 40px;
     left: 38px;
-    transform: scale(3.3,3.3);
+    transform: scale(3.3);
 }
 
 input[type=checkbox].menu_cb:checked ~ #top_menu_bar > li {
@@ -759,11 +759,11 @@ input[type=checkbox]#submit_search {
     background-image: url("../img/solutions/solution_icon_biz-transform_hover.png");
 }
 
-#top-sec .padding {
-    position: relative;
-    padding: 0;
-    /*z-index: 4;*/
-}
+/*#top-sec .padding {*/
+    /*position: relative;*/
+    /*padding: 0;*/
+    /*!*z-index: 4;*!*/
+/*}*/
 
 #top-right label {
     display: inline-block;
@@ -849,10 +849,14 @@ input[type=checkbox]#submit_search {
     font-weight: 700;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 975px) {
     /*#top_menu_bar {*/
         /*display: none;*/
     /*}*/
+
+    .padding {
+        width: 90vw;
+    }
 
     #top-sec .hidden {
         display: block;
@@ -863,13 +867,26 @@ input[type=checkbox]#submit_search {
         left: calc(50% - 92.5px)
     }
 
-    /*#top_menu_bar {*/
-        /*display: none;*/
-    /*}*/
-
     #top_menu_bar > li {
         display: none;
         float: none;
+        /*border: solid darkgray 2px;*/
+        /*border-bottom: none;*/
+    }
+
+    #top-right {
+        display: none;
     }
 }
 
+@media screen and (max-width: 960px) {
+    #first-sec li {
+        display: block;
+        float: none;
+        width: 90vw;
+    }
+
+    #first-sec li > a {
+        height: 30px;
+    }
+}
