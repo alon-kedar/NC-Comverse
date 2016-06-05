@@ -191,7 +191,7 @@ a:hover {
 }
 
 .main-link {
-    background-color: blue;
+    background-color: rgb(49,140,173);
     color: white;
     height: auto;
     /*width: 220px;*/
@@ -202,6 +202,11 @@ a:hover {
     padding: 10px 10px 8px 10px;
     display: inline-block;
     text-align: left;
+}
+
+.main-link:hover {
+    background-color: lightskyblue;
+    color:white;
 }
 
 .marked-date {
@@ -547,6 +552,7 @@ li {
     border-style: hidden;
     height: 23px;
     background-color: #fff;
+    outline: none;
 }
 
 #submit > button {
@@ -736,6 +742,12 @@ ul {
     margin-left: 4px;
     /*margin-top: 27px;*/
     /*border-radius: 5px;*/
+}
+
+#submit button > img {
+    position: relative;
+    top: 2px;
+    right: 2px;
 }
 
 .news-image:hover {
