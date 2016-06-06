@@ -122,9 +122,13 @@ html {
 
 
 
-i:hover,
+/*a:hover > i,*/
 a:hover {
     color: black;
+}
+
+a:hover > i {
+    color: inherit;
 }
 
 .main-nav > a {
