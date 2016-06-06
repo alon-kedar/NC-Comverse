@@ -911,6 +911,20 @@ input[type=checkbox]#submit_search {
         /*display: none;*/
     }
 
+    #top_menu_bar > li:hover {
+        /*display: none;*/
+        height: 0;
+        float: none;
+        /*border: solid darkgray 2px;*/
+        /*border-bottom: none;*/
+        transition: height 100ms;
+        border: none;
+    }
+    
+    #top_menu_bar >li:hover > a {
+        background-color: whitesmoke;
+    }
+
     #top_menu_bar {
         position: absolute;
         padding: 0px;
