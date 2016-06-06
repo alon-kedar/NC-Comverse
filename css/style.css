@@ -645,7 +645,9 @@ ul {
 #top_menu_bar {
     padding: 52px 20px 0px 30px;
     float: left;
+    overflow: hidden;
     /*vertical-align: bottom;*/
+    /*transition: all 200ms;*/
 }
 
 .horizontel > li {
@@ -698,7 +700,7 @@ ul {
 .menu_btn {
     position: absolute;
     top: 30px;
-    left: 5vw;
+    left: 3vw;
     transform: translate(-9px,0);
     /*transform: scale(2,2);*/
 }
@@ -706,7 +708,7 @@ ul {
 input[type=checkbox].menu_cb {
     position: absolute;
     top: 40px;
-    left: 5vw;
+    left: 3vw;
     transform: scale(3.3);
 }
 
@@ -716,6 +718,10 @@ input[type=checkbox].menu_cb:checked ~ #top_menu_bar > li {
     height: 35px;
 }
 
+input[type=checkbox].menu_cb:checked ~ #top_menu_bar{
+    overflow: visible;
+}
+
 #top-sec .hidden {
     display: none;
 }
@@ -723,14 +729,14 @@ input[type=checkbox].menu_cb:checked ~ #top_menu_bar > li {
 .search_btn {
     position: absolute;
     top: 32px;
-    right: 5vw;
+    right: 3vw;
     transform: scale(1.8,1.8);
 }
 
 input[type=checkbox]#submit_search {
     position: absolute;
     top: 40px;
-    right: 5vw;
+    right: 3vw;
     transform: scale(3.3,3.3);
 }
 
@@ -874,17 +880,17 @@ input[type=checkbox]#submit_search {
 }
 
 @media screen and (max-width: 960px) {
-    /*#top_menu_bar {*/
-        /*display: none;*/
-    /*}*/
-
     .padding {
-        width: 90vw;
+        width: 94vw;
         /*position: relative;*/
     }
 
     #top-sec .hidden {
         display: block;
+    }
+
+    #top-sec .submenu {
+        display: none;
     }
 
     #top-sec .padding > a >img {
@@ -909,8 +915,9 @@ input[type=checkbox]#submit_search {
         position: absolute;
         padding: 0px;
         top: 80px;
-        left: 5vw;
-        right: 5vw;
+        left: 0;
+        right: 0;
+        height: 0;
     }
 
     #top-right {
@@ -929,7 +936,7 @@ input[type=checkbox]#submit_search {
     #events-section li,
     #events-section dd,
     #events-section a{
-        width: 90vw;
+        width: 94vw;
         display: block;
         float: none;
     }
@@ -956,7 +963,7 @@ input[type=checkbox]#submit_search {
     #main-section li {
         display: block;
         float: none;
-        width: 90vw;
+        width: 94vw;
     }
 
     #main-section li > a {
