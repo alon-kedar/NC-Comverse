@@ -140,7 +140,7 @@ a:hover {
     padding: 0 20px 0 20px;
     position: relative;
     text-align: center;
-    background: rgba(255, 255, 255, 0.3);
+    background: #3b3b3b;
 }
 
 #bottom-right p {
@@ -167,7 +167,7 @@ a:hover {
     transform: translate(-3px, 0);
 }
 
-#first-sec li {
+#main-section li {
     position: relative;
     width: 300px;
     height: 160px;
@@ -181,7 +181,7 @@ a:hover {
     /*vertical-align: text-top;*/
 }
 
-#first-sec li:last-child {
+#main-section li:last-child {
     margin-right: 0;
 }
 
@@ -248,25 +248,25 @@ h2 {
     color: white;
 }
 
-#first-sec {
+#main-section {
     background-image: url("../img/slider/custom-experience.jpg");
-    height: 500px;
+    /*height: 500px;*/
     /*z-index: 5;*/
 }
 
-#second-sec {
-    background: url("../img/backgrounds/solutions-bg.png") dodgerblue;
+#solutions-section {
+    background: url("../img/backgrounds/solutions-bg.png") rgba(73,166,203,1);
     /*height: 460px;*/
     /*margin: auto;*/
 }
 
-#second-sec nav>a {
+#solutions-section nav > a {
     padding-top: 60px;
     text-align: center;
 }
 
-#second-sec .main-link,
-#aside-sec .main-link {
+#solutions-section .main-link,
+#stories-section .main-link {
     margin-bottom: 40px;
     /*text-align: center;*/
     margin-top: 50px;
@@ -277,19 +277,19 @@ h2 {
     width: 160px;
 }
 
-#third-sec {
+#events-section {
     background-image: url(../img/backgrounds/news-and-events-bg.jpg);
-    height: 350px;
+    /*height: 350px;*/
     font-size: 0;
 }
 
-#third-sec a {
+#events-section a {
     font-size: 1rem;
     position: absolute;
     margin-top: 110px;
 }
 
-#third-sec p {
+#events-section p {
     display: inline-block;
     width: 300px;
     height: 100px;
@@ -301,11 +301,11 @@ h2 {
     /*ask alex how to avoid spacing between inline elements*/
 }
 
-#third-sec p:hover {
+#events-section p:hover {
     background-color: whitesmoke;
 }
 
-#third-sec .wrapper {
+#events-section .wrapper {
     display: inline-block;
 }
 
@@ -331,17 +331,18 @@ h2 {
     padding: 10px;
 }
 
-#third-sec li {
+#events-section li {
     display: inline-block;
     /*float: left;*/
     width: 300px;
+    height: 160px;
 }
 
-#third-sec dd + li {
+#events-section dd + li {
     margin-right: 30px;
 }
 
-#second-sec .padding {
+#solutions-section .padding {
     text-align: center;
 }
 
@@ -355,15 +356,15 @@ h2 {
 
 }
 
-#bottom .title1 {
+#bottom-section .title1 {
     color: #4882A0;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 600;
     display: inline-block;
     padding: 20px 0;
 }
 
-#aside-sec footer {
+#stories-section footer {
     font-size: 0.75rem;
     line-height: 25px;
     padding: 10px 0 0 10px;
@@ -374,15 +375,15 @@ h2 {
     width: 100%;
 }
 
-#aside-sec h3 {
+#stories-section h3 {
     color: blue;
 }
 
-#aside-sec > .padding {
+#stories-section > .padding {
     text-align: center;
 }
 
-#aside-sec footer > img {
+#stories-section footer > img {
     position: absolute;
     bottom: 15px;
     right: 10px;;
@@ -409,8 +410,8 @@ h2 {
     margin-right: 0;
 }
 
-#aside-sec article,
-#aside-sec .article{
+#stories-section article,
+#stories-section .article{
     display: inline-block;
     /*padding: 10px;*/
     width: 351.4px;
@@ -419,7 +420,7 @@ h2 {
     height: inherit;
 }
 
-#aside-sec .hovered {
+#stories-section .hovered {
      /*position: absolute;*/
      /*top: 0;*/
      /*right: 0;*/
@@ -427,7 +428,7 @@ h2 {
      color: white;
      display: inline-block;
     transform: translate(0,0);
-     transition: all 500ms ease;
+     transition: all 150ms;
 
     /*height: 100%;*/
     height: inherit;
@@ -447,7 +448,7 @@ h2 {
     overflow:hidden;
 }
 
-#aside-sec .story-wrapper:hover > .hovered {
+#stories-section .story-wrapper:hover > .hovered {
     transform: translate(0,-100%);
 }
 
@@ -455,7 +456,7 @@ h2 {
     margin-top: 0;
 }
 
-#aside-sec > .padding > div {
+#stories-section > .padding > div {
     display: inline-block;
     float: left;
     margin-right: 13.7px;
@@ -463,7 +464,7 @@ h2 {
     /*vertical-align: top;*/
 }
 
-#aside-sec #lad {
+#stories-section #lad {
     margin-right: 0;
     /*overflow: hidden;*/
 }
@@ -507,25 +508,31 @@ li {
 }
 
 .sec-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 40px 0;
     text-align: center;
 }
 
-#first-sec h1 {
+#main-section h1 {
+    font-size: 2.8rem;
     padding-top: 25px;
     margin-bottom: 0px;
 }
 
-#first-sec p {
+#main-section h1 + p {
+    font-size: 1.3rem;
+}
+
+#main-section p {
     padding-top: 10px;
 }
 
-#first-sec .main-link {
+
+#main-section .main-link {
     margin-top: 30px;
 }
 
-#first-sec ul {
+#main-section ul {
     /*width: 1100px;*/
     list-style: none;
     overflow: hidden;
@@ -565,18 +572,18 @@ li {
     top: -5px;
 }
 
-#aside-sec {
+#stories-section {
     background: #e3e3e3;
     color: grey;
     font-size: 0;
     height: 560px;
 }
 
-#third-sec dd {
+#events-section dd {
     font-size: 1.4rem;
 }
 
-#first-sec li > a {
+#main-section li > a {
     position: absolute;
     top: 120px;
     left: 0;
@@ -588,7 +595,8 @@ li {
     background: #fff;
     overflow: visible;
     height: 80px;
-    /*z-index: 10;*/
+    position: relative;
+    z-index: 100;
 }
 
 #top-sec > div > div {
@@ -631,7 +639,7 @@ ul {
 }
 
 #top_menu_bar {
-    padding: 52px 20px 0px 15px;
+    padding: 52px 20px 0px 30px;
     float: left;
     /*vertical-align: bottom;*/
 }
@@ -672,7 +680,7 @@ ul {
 
 #top-sec form {
     float: left;
-    width: 200px;
+    width: 184.5px;
 }
 
 #top-sec .padding > a >img {
@@ -723,8 +731,9 @@ input[type=checkbox]#submit_search {
 }
 
 .sol-img {
-    background-size:150px;
+    background-size:160px;
     background-repeat: no-repeat;
+
 }
 
 #money-sol {
@@ -804,20 +813,20 @@ input[type=checkbox]#submit_search {
     content: url("../img/events/eventListIconEvents_hover.png")
 }
 
-#bottom {
+#bottom-section {
     position: relative;
     background: #222222;
     height: 280px;
 }
 
-#bottom dl {
+#bottom-section dl {
     float: left;
-    margin-right: 70px;
+    margin-right: 50px;
     padding: 20px 0;
 }
 
 #bottom-right input {
-    width: 150px;
+    width: 156px;
     border: none;
     height: 24px;
     /*ask alex about avoiding space without changing tags structure*/
@@ -825,16 +834,17 @@ input[type=checkbox]#submit_search {
 
 #copy {
     position: absolute;
-    bottom: 10px;
+    top: 250px;
+    /*color: #cccccc;*/
 }
 
-#bottom dd {
+#bottom-section dd {
     padding-bottom: 10px;
 }
 
-#bottom {
+#bottom-section {
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .right {
@@ -866,6 +876,7 @@ input[type=checkbox]#submit_search {
 
     .padding {
         width: 90vw;
+        /*position: relative;*/
     }
 
     #top-sec .hidden {
@@ -886,7 +897,7 @@ input[type=checkbox]#submit_search {
         /*border: solid darkgray 2px;*/
         /*border-bottom: none;*/
         background-color: white;
-        transition: height 200ms;
+        transition: height 100ms;
         /*display: none;*/
     }
 
@@ -904,30 +915,47 @@ input[type=checkbox]#submit_search {
 }
 
 @media screen and (max-width: 960px) {
+    #solutions-section nav > a {
+        width: 30vw;
+    }
+}
 
-    #first-sec {
-        height: 760px;
+@media screen and (max-width: 960px) {
+    #events-section li > p,
+    #events-section li,
+    #events-section dd,
+    #events-section a{
+        width: 90vw;
+        display: block;
+        float: none;
     }
 
-    #first-sec ul {
+    #events-section li {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    #main-section ul {
         margin-top: 10px;
     }
 
-    #first-sec h1 {
+    #main-section h1 {
         padding-top: 15px;
     }
 
-    #first-sec .main-link {
+    #main-section .main-link {
         margin-top: 15px;
     }
 
-    #first-sec li {
+    #main-section li {
         display: block;
         float: none;
         width: 90vw;
     }
 
-    #first-sec li > a {
+    #main-section li > a {
         height: 30px;
     }
 }
