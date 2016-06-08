@@ -1,0 +1,77 @@
+#solutions-section {
+    background:url("../img/backgrounds/solutions-bg.png") repeat,
+    linear-gradient(to right, rgba(73,166,203,1) 0%, rgba(103,198,224,1) 50%, rgba(73,166,203,1) 100%);
+    /*height: 460px;*/
+    /*margin: auto;*/
+}
+
+#solutions-section .main-nav > a {
+    padding-top: 60px;
+    text-align: center;
+    float: left;
+    width: 160px;
+}
+
+#solutions-section .padding {
+    text-align: center;
+}
+
+#solutions-section .main-nav {
+    display: inline-block;
+}
+
+
+.sol-img {
+    background-size:160px;
+    background-repeat: no-repeat;
+
+}
+
+#money-sol {
+    background-image: url("../img/solutions/solution_icon_biz-analitics.png");
+}
+#money-sol:hover {
+    background-image: url("../img/solutions/solution_icon_biz-analitics_hover.png");
+}
+
+#diti-sol {
+    background-image: url("../img/solutions/solution_icon_diti-cx.png");
+}
+
+#diti-sol:hover {
+    background-image: url("../img/solutions/solution_icon_diti-cx_hover.png");
+}
+
+#smart-sol {
+    background-image: url("../img/solutions/solution_icon_smart-money.png");
+}
+#smart-sol:hover {
+    background-image: url("../img/solutions/solution_icon_smart-money_hover.png");
+}
+
+#optimize-sol {
+    background-image: url("../img/solutions/solution_icon_optimize-efficnt.png");
+}
+#optimize-sol:hover {
+    background-image: url("../img/solutions/solution_icon_optimize-efficnt_hover.png");
+}
+
+#personal-sol {
+    background-image: url("../img/solutions/solution_icon_personal.png");
+}
+#personal-sol:hover {
+    background-image: url("../img/solutions/solution_icon_personal_hover.png");
+}
+
+#biz-sol {
+    background-image: url("../img/solutions/solution_icon_biz-transform.png");
+}
+#biz-sol:hover {
+    background-image: url("../img/solutions/solution_icon_biz-transform_hover.png");
+}
+
+@media screen and (max-width: 960px) {
+    #solutions-section nav > a {
+        width: 30vw;
+    }
+}

@@ -1,0 +1,89 @@
+
+#bottom-section {
+    position: relative;
+    background: #222222;
+    height: 280px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+#bottom-section dl {
+    float: left;
+    margin-right: 50px;
+    padding: 20px 0;
+}
+
+#bottom-right input {
+    width: 156px;
+    border: none;
+    height: 24px;
+    /*ask alex about avoiding space without changing tags structure*/
+}
+
+#copy {
+    position: absolute;
+    top: 250px;
+    /*color: #cccccc;*/
+}
+
+#bottom-section dd {
+    padding-bottom: 10px;
+}
+
+
+
+#bottom-date {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    vertical-align: top;
+    float: left;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    /*line-height: 20px;*/
+}
+
+#bottom-day {
+    font-size: 2rem;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+#bottom-right {
+    position: relative;
+    width: 260px;
+    height: 280px;
+    /*float: left;*/
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    position: relative;
+    text-align: center;
+    background: #3b3b3b;
+}
+
+#bottom-right p {
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+    border-bottom-width: 1px;
+    padding-bottom: 20px;
+}
+
+#bottom-right button {
+    font-size: 0.7rem;
+    height: 24px;
+    width: 60px;
+    background-color: #3398CB;
+    border: none;
+    position: relative;
+    transform: translate(-3px, 0);
+}
+
+#bottom-section .title1 {
+    color: #4882A0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: inline-block;
+    padding: 20px 0;
+}

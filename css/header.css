@@ -1,0 +1,269 @@
+.vertical {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    padding: 20px;
+
+}
+
+.submenu {
+    position: absolute;
+    left: 0;
+    top: 94px;
+    width: 100%;
+    display: none;
+    background-color: #fff;
+    z-index: 10;
+    border: solid lightgrey 2px;
+}
+
+.submenu img {
+    float: right;
+    padding: 0 40px;
+    margin: 30px 0;
+    border-left: solid #ccc 2px;
+}
+
+.vertical a {
+    display: block;
+}
+
+.vertical dd {
+    color: #65B1D7;
+    text-decoration: underline;
+}
+
+.vertical a:hover {
+    background-color: lightblue;
+}
+
+.horizontel > li:hover > .submenu {
+    display: block;
+}
+
+.vertical > li {
+    width: 100%;
+}
+
+#submit {
+    height: 25px;
+    margin-top: 25px;
+    display: inline-block;
+    border-radius: 7px;
+    border: solid rgb(204,204,204) 1px;
+    overflow: hidden;
+}
+
+#top-right img {
+    position: relative;
+    top: 2px;
+
+}
+
+#submit > input,
+#submit > button {
+    border-style: hidden;
+    height: 23px;
+    background-color: #fff;
+    outline: none;
+}
+
+#submit > button {
+    position: relative;
+    top: -5px;
+}
+
+#top-sec {
+    background: #fff;
+    overflow: visible;
+    height: 80px;
+    position: relative;
+    z-index: 100;
+}
+
+#top-sec > div > div {
+    /*width:1000px;*/
+    /*height: 80px;*/
+    /*margin: auto;*/
+    padding-top: 10px;
+}
+
+
+#top-right > select {
+    border-style: none;
+}
+
+#top_menu_bar {
+    padding: 52px 20px 0px 30px;
+    float: left;
+    overflow: hidden;
+    /*vertical-align: bottom;*/
+    /*transition: all 200ms;*/
+}
+
+.horizontel > li {
+    font-size: 0.9rem;
+    /*padding: 0 10px;*/
+    float: left;
+    line-height: 2rem;
+    border: solid transparent 1px;
+    /*z-index: 20;*/
+}
+
+.horizontel > li > a {
+    padding: 0 10px;
+}
+
+.horizontel > li:hover > a {
+    z-index: 200;
+    position: relative;
+    display: inline-block;
+    /*width: 100%;*/
+    /*height: inherit;*/
+    background-color: #fff;
+}
+
+.horizontel > li:hover {
+    border: solid gray 2px;
+    /*border-bottom-color: #fff;*/
+    border-bottom: none;
+    /*z-index: 200;*/
+}
+
+.horizontel > li li {
+    line-height: 1.5rem;
+}
+
+
+#top-sec form {
+    float: left;
+    width: 185.5px;
+}
+
+#top-sec .padding > a >img {
+    /*display: inline-block;*/
+    float: left;
+    padding-top: 10px;
+    /*vertical-align: bottom;*/
+    /*vertical-align: bottom;*/
+}
+
+.menu_btn {
+    position: absolute;
+    top: 30px;
+    left: 3vw;
+    transform: translate(-9px,0);
+    /*transform: scale(2,2);*/
+}
+
+input[type=checkbox].menu_cb {
+    position: absolute;
+    top: 40px;
+    left: 3vw;
+    transform: scale(3.3);
+}
+
+input[type=checkbox].menu_cb:checked ~ #top_menu_bar > li {
+    display: block;
+    /*position: absolute;*/
+    height: 35px;
+}
+
+input[type=checkbox].menu_cb:checked ~ #top_menu_bar{
+    overflow: visible;
+}
+
+#top-sec .hidden {
+    display: none;
+}
+
+.search_btn {
+    position: absolute;
+    top: 32px;
+    right: 3vw;
+    transform: scale(1.8,1.8);
+}
+
+input[type=checkbox]#submit_search {
+    position: absolute;
+    top: 40px;
+    right: 3vw;
+    transform: scale(3.3,3.3);
+}
+
+#top-right label {
+    display: inline-block;
+    position: relative;
+    left: 5px;
+}
+
+#submit input {
+    width: 148px;
+    float: left;
+    /*margin-top: 2px;*/
+    margin-left: 4px;
+    /*margin-top: 27px;*/
+    /*border-radius: 5px;*/
+}
+
+#submit button > img {
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+
+@media screen and (max-width: 960px) {
+    #top-sec .hidden {
+        display: block;
+    }
+
+    #top-sec .submenu {
+        display: none;
+    }
+
+    #top-sec .padding > a >img {
+        position: absolute;
+        left: calc(50% - 92.5px);
+        transform: scale(0.7);
+        padding-top: 0;
+    }
+
+    #top_menu_bar > li {
+        /*display: none;*/
+        height: 0;
+        float: none;
+        /*border: solid darkgray 2px;*/
+        /*border-bottom: none;*/
+        background-color: white;
+        transition: height 100ms;
+        /*display: none;*/
+    }
+
+    #top_menu_bar > li:hover {
+        /*display: none;*/
+        height: 0;
+        float: none;
+        /*border: solid darkgray 2px;*/
+        /*border-bottom: none;*/
+        transition: height 100ms;
+        border: none;
+    }
+
+    #top_menu_bar >li:hover > a {
+        background-color: whitesmoke;
+    }
+
+    #top_menu_bar {
+        position: absolute;
+        padding: 0px;
+        top: 80px;
+        left: 0;
+        right: 0;
+        height: 0;
+    }
+
+    #top-right {
+        display: none;
+    }
+}
+

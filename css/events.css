@@ -1,0 +1,74 @@
+#events-section {
+    background-image: url(../img/backgrounds/news-and-events-bg.jpg);
+    /*height: 350px;*/
+    font-size: 0;
+}
+
+#events-section a {
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 110px;
+}
+
+#events-section p {
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    padding: 10px;
+    color: black;
+    font-size: 0.9rem;
+    /*ask alex how to avoid spacing between inline elements*/
+}
+
+#events-section p:hover {
+    background-color: whitesmoke;
+}
+
+#events-section .wrapper {
+    display: inline-block;
+}
+
+#events-section li {
+    display: inline-block;
+    /*float: left;*/
+    width: 300px;
+    height: 160px;
+}
+
+#events-section dd + li {
+    margin-right: 30px;
+}
+
+#events-section dd {
+    font-size: 1.4rem;
+}
+
+
+.news-image:hover {
+    content: url("../img/events/eventListIconNews_hover.png");
+}
+
+.events-image:hover {
+    content: url("../img/events/eventListIconEvents_hover.png")
+}
+
+#events-section dd {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 960px) {
+    #events-section li > p,
+    #events-section li,
+    #events-section dd,
+    #events-section a {
+        width: 94vw;
+        display: block;
+        float: none;
+    }
+
+    #events-section li {
+        height: 150px;
+    }
+}
