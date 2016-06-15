@@ -141,26 +141,28 @@
 }
 
 #top-sec .padding > a >img {
-    /*display: inline-block;*/
     float: left;
     padding-top: 10px;
-    /*vertical-align: bottom;*/
-    /*vertical-align: bottom;*/
 }
 
-.menu_btn {
-    position: absolute;
-    top: 30px;
-    left: 3vw;
-    transform: translate(-9px,0);
-    /*transform: scale(2,2);*/
+.menu_btn,
+.search_btn {
+    font-size: 15px;
+    display: inline-block;
+    background: #E6E3E3;
+    padding: 5px 10px;
+    color: #3399cc;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
-input[type=checkbox].menu_cb {
-    position: absolute;
-    top: 40px;
-    left: 3vw;
-    transform: scale(3.3);
+.search_btn {
+    float: right;
+}
+
+
+#top-sec input[type=checkbox]{
+    display:none;
 }
 
 input[type=checkbox].menu_cb:checked ~ #top_menu_bar > li {
@@ -169,26 +171,16 @@ input[type=checkbox].menu_cb:checked ~ #top_menu_bar > li {
     height: 35px;
 }
 
+#top-sec input[type=checkbox]:checked  + label {
+    color: #B3ABB3;
+}
+
 input[type=checkbox].menu_cb:checked ~ #top_menu_bar{
     overflow: visible;
 }
 
 #top-sec .hidden {
     display: none;
-}
-
-.search_btn {
-    position: absolute;
-    top: 32px;
-    right: 3vw;
-    transform: scale(1.8,1.8);
-}
-
-input[type=checkbox]#submit_search {
-    position: absolute;
-    top: 40px;
-    right: 3vw;
-    transform: scale(3.3,3.3);
 }
 
 #top-right label {
@@ -214,7 +206,7 @@ input[type=checkbox]#submit_search {
 
 @media screen and (max-width: 960px) {
     #top-sec .hidden {
-        display: block;
+        display: inline-block;
     }
 
     #top-sec .submenu {
